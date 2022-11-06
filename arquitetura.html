@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/dml.github.ava/disc.js"></script>
+
+<style>
+
+    .classePrincipal {
+        margin-bottom:20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+
+    }
+
+    .card {
+        margin: 15px;
+        display: inline-table;
+        width: 25%;
+        max-height: 22%;
+        padding: 0;
+    }
+
+    .mt-5 {
+        text-align: left;
+        margin-left: 5%;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .nav-item {
+        width: 200px;
+        margin-left: 700px;
+        height: 102px;
+    }
+
+    .btn{
+        padding: 0 0.375rem;
+    }
+
+    .table {
+        width: 80%;
+        display: inline-table;
+        margin-top: 2%;
+    }
+
+    .sidebar {
+        background-color: #212529;
+        height: 100%;
+        width: 230px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-right: 60px;
+        transition: 0.5s;
+    }
+  
+    .sidebar h2,
+    li {
+        padding: 30px 0 13px 0;
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+  
+      
+    .content {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        right: 0;
+        bottom: 0;
+        -moz-transition: left 0.5s ease;
+        transition: left 0.5s ease;
+    }
+
+
+</style>
+
+<body>
+    <div class="navbar-nav" >
+        <title>Arquitetura de Computadores II</title>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="nav-item nav-link disable"><h2><font color="white" size="4">Arquitetura de Computadores II</font></h2></a>
+        </nav>
+
+    </div>
+
+
+    <div class="sidebar">
+        <img src="https://alexide.github.io/conteudo/img/img1.png" width="230px" height="110px">
+
+        <ul>
+            <section id="memorias">
+            <li>Tipos de Memórias</li>
+            </section>
+            <section id="instrucoes">
+            <li>Tipos de Instruções</li>
+            </section>
+            <li>Circuito sequencial</li>
+            <li>Tabela verdade</li>
+            <li>Mapa karnaugh</li>
+            <li>Expressão booleana</li>
+            <li>32 bits x 64bits</li>
+        </ul>
+    
+    </div>
+  
+  <section id="memorias">
+    <div id="memorias" style="text-align: center;">Memorias</div>
+      
+  </section>
+
+  <section id="instrucoes">
+       <div id="instrucoes" style="text-align: center;">Instr</div>
+  </section>
+   
+    
+
+      <select name="select">
+          <div id="memorias" style="text-align: center;">Memorias</div>
+          <option value="instrucoes" selected>Instruções</option>
+          <option value="valor3">Valor 3</option>
+        </select>
+      
+
+    <ul id="items">
+    <li data-item="1">elemento 1</li>
+    <li data-item="2">elemento 2</li>
+    <li data-item="3">elemento 3</li>
+    <li data-item="all">Todos</li>
+</ul>
+
+<div data-item="1" class="elem">elemento 1</div>
+<div data-item="2" class="elem">elemento 2</div>
+<div data-item="3" class="elem">elemento 3</div>
+
+       
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
