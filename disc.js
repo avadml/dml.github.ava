@@ -1,3 +1,4 @@
+<script>
 $(function() {
     $('ul#items li').click(function(){
         var item = $('.elem[data-item="' + $(this).attr('data-item') + '"]');
@@ -9,3 +10,4 @@ $(function() {
         $('div.elem[data-item!="'+item.attr('data-item')+'"]').hide();
     });
 });
+</script>
