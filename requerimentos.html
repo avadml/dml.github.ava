@@ -2,9 +2,17 @@
 <meta charset="UTF-8">    
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./DataTables/DataTables-1.10.16/js/bootstrap.min.js"></script>
 
+
+<script type="text/javascript">
+    
+    
+</script>
 <style>
-
+    .modal-dialog {
+        width: 700px;
+    }
     .classePrincipal {
 	    margin-bottom:20px;
         flex-wrap: wrap;
@@ -162,14 +170,49 @@
 
     <body class="classePrincipal" >
 
+        <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Novo Requerimento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                            <h5></h5>
+                            <label for="recipient-name" class="col-form-label">Setor:</label>
+                            <select class="form-control form-control-sm">
+                                <option>Matrícula</option>
+                                <option>Documentos</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Justificativa:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        </form>
+                    
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+                </div>
+            </div>                 
+
         <div class="mt-5">            
             <h2>Requerimentos</h2>
         </div>
         <br>
         <br>
-
+  
         <div class="container">
-            
+            <form action="cada_requerimento.html" method="post">
+                
+            </form>
             <table class="table table-borderless table-light">
 
                 <thead scope="col" >
@@ -184,34 +227,34 @@
                   <tr>
                     <td>
                         <a>
-                            <h5>Mudança de turma</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Mudança de turma</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Rematrícula</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Rematrícula</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Trancamento de matrícula</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Trancamento de matrícula</button>
                         </a>
                     </td>
                   </tr>
                   <tr>
                     <td>
                         <a>
-                            <h5>Transferência de Curso</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Transferência de Curso</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Dispnsa de Disciplinas</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Dispensa de Disciplinas</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Histórico Escolar</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Histórico Escolar</button>
                         </a>
                     </td>
                   </tr>
@@ -233,34 +276,34 @@
                   <tr>
                     <td>
                         <a>
-                            <h5>Carteirinha de Estudante</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Carteirinha de Estudante</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Declaração com tempo de duração do curso</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Declaração com tempo de duração do curso</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Ementas</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Ementas</button>
                         </a>
                     </td>
                   </tr>
                   <tr>
                     <td>
                         <a>
-                            <h5>Solicitação de Histórico para transferência</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Solicitação de Histórico para transferência</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Certificado de ACG</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Certificado de ACG</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Certificado de Conclusão de Curso</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Certificado de Conclusão de Curso</button>
                         </a>
                     </td>
                   </tr>
@@ -282,34 +325,34 @@
                   <tr>
                     <td>
                         <a>
-                            <h5>Colação de Grau</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Colação de Grau</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Envio de Documentos</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Envio de Documentos</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Atestados</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Atestados</button>
                         </a>
                     </td>
                   </tr>
                   <tr>
                     <td>
                         <a>
-                            <h5>Solicitação de Restituição</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Solicitação de Restituição</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>Boletos</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">Boletos</button>
                         </a>
                     </td>
                     <td>
                         <a>
-                            <h5>2° via de boleto</h5>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-light">2° via de boleto</button>
                         </a>
                     </td>
                   </tr>
